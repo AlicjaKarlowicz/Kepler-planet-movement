@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="477.0" prefWidth="505.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MN.HelpController">
+   <children>
+      <ImageView fitHeight="204.0" fitWidth="251.0" layoutX="14.0" layoutY="252.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="21.0" AnchorPane.leftAnchor="14.0">
+         <image>
+            <Image url="@../../../../planet_orbital_properties.png" />
+         </image>
+      </ImageView>
+      <TextArea cacheShape="false" centerShape="false" editable="false" focusTraversable="false" layoutX="24.0" layoutY="14.0" prefHeight="215.0" prefWidth="458.0" text="In the trajectory app we're using Kepler's laws of planetary motion. These improved the heliocentric theory of Nicolaus Copernicus, replacing its circular orbits with epicycles with elliptical trajectories and explaining how planetary velocities vary. Kepler used his two first laws to compute the position of a planet as a function of time. His method involves the solution of a transcendental equation called Kepler's equation.&#10;&#10;The procedure for calculating the heliocentric polar coordinates of a planet as a function of the time t since perihelion, is the following three steps:&#10;1.Compute the mean anomaly M where T is orbital time:&#10;&#9;M=2*PI/T (t-t0)&#10;2.Compute the eccentric anomaly E by solving Kepler's equation:&#10;&#9;M = E - esinE&#10;3.Compute the position of the planet in the given moment of time t where a is the distance from Sun and e is eccentricity :&#10;&#9;x=a(cos(E-e))&#9;&#10;&#9;y=a(1-e^2)^(1/2)sinE&#10;&#10;Trajectory reveals after computing x,y for every moment of time in the orbital&#10;period for given planet." wrapText="true" />
+      <ImageView fitHeight="204.0" fitWidth="238.0" layoutX="258.0" layoutY="252.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../kepler.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
